@@ -21,6 +21,21 @@
             color: #000000;
         }
 
+        header {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        #logo {
+            position: absolute;
+            bottom: 350px;
+            left: 680px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        
         #boutonPage2 {
             position: absolute;
             top: 10px;
@@ -33,6 +48,7 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
+
 
         #boutonPage2:hover {
             background-color: #006666;
@@ -63,6 +79,12 @@
 
     <a href="page2.html" id="boutonPage2">En savoir plus</a>
 
+    <header>
+        <a href="logo.png">
+            <img src="C:\Users\kidth\OneDrive\Bureau\yoyasdu.github.io/logo.png" alt="Logo de votre site" id="logo">
+        </a>
+    </header>
+
     <h1>Bienvenue sur Escape E.M.E !</h1>
     
     <input type="text" id="champSaisie" placeholder="Saisissez un mot">
@@ -81,13 +103,9 @@
                 resultatContainer.textContent = 'Migneret';
             } else if (motSaisi === 'tolaini') {
                 resultatContainer.textContent = 'meilleur prof';
-            } else if (motSaisi === 'ambre') {
-                resultatContainer.textContent = 'namoureuse thomas';
-            } else if (motSaisi === 'manon') {
-                resultatContainer.textContent = 'namoureuse enzo';
             } else {
                 resultatContainer.textContent = 'Aucun texte spécifique pour le mot saisi.';
-            }
+        }
         }
     </script>
 </body>
