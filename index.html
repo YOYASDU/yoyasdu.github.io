@@ -4,76 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escape E.M.E</title>
-    <style>
-        body {
-            background-color: #23518a;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        h1 {
-            color: #000000;
-        }
-
-        header {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-        }
-
-        #logo {
-            position: absolute;
-            bottom: 350px;
-            left: 680px;
-            width: 100px;
-            cursor: pointer;
-        }
-
-        
-        #boutonPage2 {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 10px;
-            background-color: #008080;
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-
-        #boutonPage2:hover {
-            background-color: #006666;
-        }
-
-        #boutonCodes {
-            padding: 10px 20px;
-            background-color: #008080;
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        #boutonCodes:hover {
-            background-color: #006666;
-        }
-
-        #resultat {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #ffffff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -92,21 +23,6 @@
     
     <div id="resultat"></div>
 
-    <script>
-        function afficherResultat() {
-            var motSaisi = document.getElementById('champSaisie').value.toLowerCase();
-            var resultatContainer = document.getElementById('resultat');
-
-            if (motSaisi === 'enzo') {
-                resultatContainer.textContent = 'Bodin';
-            } else if (motSaisi === 'thomas') {
-                resultatContainer.textContent = 'Migneret';
-            } else if (motSaisi === 'tolaini') {
-                resultatContainer.textContent = 'meilleur prof';
-            } else {
-                resultatContainer.textContent = 'Aucun texte spécifique pour le mot saisi.';
-        }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
