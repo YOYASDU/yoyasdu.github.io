@@ -1,33 +1,10 @@
-/**
-* @author   Romain Semler ©2017
-* @name     snake.js
-* @version  1.0
-*/
-
 $(document).ready(function() {
-
-    /*********************************/
-    /*  VARIABLES GLOBALES
-    **********************************/
 
     var LARGEUR = 900;
     var HAUTEUR = 500;
     var TAILLECASE = 20;
     var VITESSE = 80;
 
-
-
-    /*********************************/
-    /*  CREATION DU CANVAS
-    **********************************/
-
-    /**
-    *   Crée l'élément HTML <canvas>.
-    *   @param l
-    *       La largeur du canvas.
-    *   @param h
-    *       La hauteur du canvas.
-    */
     function creerCanvas(l, h) {
 
         $('#jeu').append(

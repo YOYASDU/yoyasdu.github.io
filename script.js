@@ -8,7 +8,9 @@ function afficherResultat() {
         resultatContainer.textContent = 'Migneret';
     } else if (motSaisi === 'tolaini') {
         resultatContainer.textContent = 'meilleur prof';
+    } else if (motSaisi === 'jeu') {
+        document.location.href="index2.html";
     } else {
-        resultatContainer.textContent = 'Aucun texte spécifique pour le mot saisi.';
+        document.resultatContainer.textContent = 'Aucun texte spécifique pour le mot saisi.';
     }
 }
