@@ -64,3 +64,34 @@ header {
     font-size: 16px;
     color: #ffffff;
 }
+
+#aide1 {
+    position: absolute;
+    bottom: 350px;
+    left: 10px;
+    padding: 10px;
+    margin-top: 20;
+    font-size: 16;
+    color: #ffffff;
+}
+
+#aide2 {
+    position: absolute;
+    bottom: 330px;
+    left: 10px;
+    padding: 10px;
+    margin-top: 20;
+    font-size: 16;
+    color: #ffffff;
+}
+
+#exp {
+    text-decoration: underline;
+    position: absolute;
+    bottom: 370px;
+    left: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
