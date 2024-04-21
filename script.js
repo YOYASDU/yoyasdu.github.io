@@ -28,7 +28,7 @@ function afficherResultat() {
     else if (motSaisi === 'tolaini') {
         resultatContainer.textContent = 'meilleur prof';
     } else if (motSaisi === 'jeu') {
-        document.location.href="index2.html";
+        document.location.href="jeu.html";
     } 
     
 
