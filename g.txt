@@ -1,1 +1,13 @@
 https://yoyasdu.github.io./
+
+dans la page 3 ( indices), comment afficher les indices apres avoir cliqué sur l'indice voulu ?
+    reconnaissance facial (lunette) avant de rentrer dans la page 3
+
+    afficher les résultats a coté des indices apres avoir cliqué sur l'indice voulu
+
+dans toute les pages, mettre la petite partie avec les info sur nous, confidentialite, droit, ect en bas de chaque page ?
+    Oui, toutes les pages
+    Oui, certaines pages
+    Non, on la laisse que sur une
+
+    Il faut la modifié et apres on se repose la question

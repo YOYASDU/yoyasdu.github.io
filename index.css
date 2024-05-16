@@ -1,0 +1,52 @@
+body {
+    background-color:azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#bjr {
+    position: absolute;
+    top: 15px;
+    font-size: 35px;
+    color: black;
+    text-decoration: underline;
+}
+
+#BoutonRegistre {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    position: absolute;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+#eme {
+    position: absolute;
+    width: 550px;
+    border-radius: 15px;
+    border-style: groove;
+    border-color: black;
+    cursor: pointer;
+}
+#eme2 {
+    position: absolute;
+    top: 280px;
+    width: 100px;
+    cursor: pointer;
+}

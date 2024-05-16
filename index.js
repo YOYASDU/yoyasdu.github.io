@@ -11,14 +11,16 @@ function afficherResultat() {
     }
     
     // SALLE 6
-    else if (motSaisi === '05/05/1789') { //Prise - Le commencement de la révolution francaise ?
+    else if (motSaisi === 'Martin Luther') { //étiquette d'énergie élèctrique - La prise de la bastille ?
+        resultatContainer.textContent = 'électricité';
+    } else if (motSaisi === '05/05/1789') { //Prise - Le commencement de la révolution francaise ?
         resultatContainer.textContent = 'étiquette';
     } else if (motSaisi === '14/07/1789') { //étiquette d'énergie élèctrique - La prise de la bastille ?
         resultatContainer.textContent = 'trousseau de clef';
     } 
 
     //SALLE 5
-    else if (motSaisi === '01/09/1715') { // - Décés de LOUIS XIV ?
+    else if (motSaisi === '01/09/1715') { //multimetre - Décés de LOUIS XIV ?
         resultatContainer.textContent = '';
     } else if (motSaisi === '1400/1600') { // - Dates de la Renaissances ?
         resultatContainer.textContent = 'Office planer (tableau étiquette)';
@@ -39,5 +41,9 @@ function afficherResultat() {
 }
 
 
+// Récupérez le paramètre d'URL contenant la valeur saisie
+var params = new URLSearchParams(window.location.search);
+var motSaisi = params.get('mot');
 
-// [SCAN] - (QUESTION)
+// Utilisez cette valeur comme vous le souhaitez
+console.log(motSaisie);
