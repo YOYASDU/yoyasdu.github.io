@@ -10,19 +10,25 @@ function afficherResultat() {
         resultatContainer.textContent = 'Migneret';
     }
     
+        //Page 122 à 154 HISTOIRE - Renaissance
+
     // SALLE 6
-    else if (motSaisi === 'Martin Luther') { //étiquette d'énergie élèctrique - La prise de la bastille ?
+    else if (motSaisi === 'Martin Luther') { //Dans la premiere boite - Fondateur de la Réforme protestante ? - Page 148
         resultatContainer.textContent = 'électricité';
-    } else if (motSaisi === '05/05/1789') { //Prise - Le commencement de la révolution francaise ?
+    }else if (motSaisi === '1400/1600') { //tableau éléctrique - Dates de la Renaissances ? - Page 138
         resultatContainer.textContent = 'étiquette';
-    } else if (motSaisi === '14/07/1789') { //étiquette d'énergie élèctrique - La prise de la bastille ?
+    }else if (motSaisi === '1475') { //étiquette d'énergie élèctrique - naissance de Michel Ange ? - Page 132
         resultatContainer.textContent = 'trousseau de clef';
     } 
 
+        //Dates importantes
+
     //SALLE 5
-    else if (motSaisi === '01/09/1715') { //multimetre - Décés de LOUIS XIV ?
-        resultatContainer.textContent = '';
-    } else if (motSaisi === '1400/1600') { // - Dates de la Renaissances ?
+    else if (motSaisi === '04/07/1776') { //dans la deuxieme boite - Déclaration de l'indépendance des Etats Unis ? - Page 210
+        resultatContainer.textContent = 'Testeur de tension';
+    }else if (motSaisi === '24/08/1572') { //multimetre - Massacre des chefs protestant lors de la Saint Barthelemy ? - Page 173
+        resultatContainer.textContent = 'numérique';
+    } else if (motSaisi === '21/11/1783') { //coupe - Date de la premiere ascension humaine en montgolfiere ? - Page 228
         resultatContainer.textContent = 'Office planer (tableau étiquette)';
     }    
 
@@ -30,8 +36,8 @@ function afficherResultat() {
     else if (motSaisi === 'tolaini') {
         resultatContainer.textContent = 'meilleur prof';
     } else if (motSaisi === 'jeu') {
-        document.location.href="jeu.html";
-    } 
+        document.location.href="Astroders.py";
+    }
     
 
     else {

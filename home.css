@@ -3,140 +3,167 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
 }
 
 h1 {
     position: absolute;
-    bottom: 550px;
-    left: 460px;
-    font-size: 40px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
     color: #000000;
+    text-align: center;
 }
 
 header {
-    width: 100px;
-    height: 100px;
     position: absolute;
+    top: 3%;
+    right: 3%;
+    transform: translateX(-50%);
 }
 
 #logo {
-    position: absolute;
-    bottom: 350px;
-    left: 680px;
     width: 100px;
     cursor: pointer;
 }
 
-
-/*BOUTONS*/
-#boutonPage2 {
+/* Boutons */ 
+.button {
     position: absolute;
-    top: 10px;
-    left: 10px;
     padding: 10px;
     background-color: #008080;
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-#boutonPage2:hover {
+.button:hover {
     background-color: #006666;
 }
 
+#boutonplus {
+    top: 1.5%;
+    left: 1%;
+}
 
-#boutonIndex {
+#boutonHome {
+    top: 8%;
+    left: 1%;
+}
+
+#champSaisie {
     position: absolute;
-    top: 60px;
-    left: 10px;
-    padding: 10px;
-    background-color: #008080;
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#boutonIndex:hover {
-    background-color: #006666;
-}
-
-
-#boutonIndice {
+button {
     position: absolute;
-    bottom: 290px;
-    left: 20px;
-    padding: 10px;
-    background-color: #008080;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-
-#boutonIndice:hover {
-    background-color: #006666;
-}
-
-
-#boutonCodes {
-    padding: 15px 25px;
-    background-color: #008080;
-    color: #fff;
-    text-decoration: none;
-    font-size: 25px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-#boutonCodes:hover {
-    background-color: #006666;
+    top: calc(50% + 40px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #resultat {
-    margin-top: 20px;
-    font-size: 20px;
+    position: absolute;
+    top: calc(55% + 80px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.25rem;
     color: #ffffff;
 }
 
-
-/*AIDES*/
-#aide1 {
+/* Aides */
+.aider {
     position: absolute;
-    bottom: 345px;
-    left: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 20px;
+    top: 35%;
     color: #ffffff;
+    font-size: 1.25rem;
 }
 
-#aide2 {
-    position: absolute;
-    bottom: 325px;
-    left: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 20px;
-    color: #ffffff;
+
+/* Media Queries */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+        top: 10px;
+    }
+
+    header {
+        top: 3%;
+        right: 0.5%;
+    }
+    #logo {
+        width: 80px;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+
+    .aider {
+        font-size: 1rem;
+    }
+
 }
 
-#exp {
-    text-decoration: underline;
-    position: absolute;
-    bottom: 370px;
-    left: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 20px;
-    color: #ffffff;
+@media (max-width: 550px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header {
+        top: 3%;
+        right: 0.5%;
+    }
+
+    #logo {
+        width: 50px;
+    }
+
+
+    .button {
+        font-size: 0.8rem;
+    }
+
+    #boutonplus, #boutonHome, #boutonIndice {
+        font-size: 0.8rem;
+    }
+
+    #exp {
+        bottom: 80px;
+    }
+
+    #aide1 {
+        bottom: 55px;
+    }
+
+    #aide2 {
+        bottom: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    #boutonplus, #boutonIndice {
+        font-size: 0.5rem;
+    }
+
+    #boutonHome {
+        font-size: 0.5rem;
+        top: 6%;
+    }
+
+
+    .aider {
+        font-size: 0.8rem;
+    }
+
+    
 }
